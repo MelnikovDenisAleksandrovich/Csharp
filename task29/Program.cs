@@ -4,7 +4,7 @@
 1,2,5,7,19 -> [1,2,5,7,19]
 6,1,33 ->[6,1,33] */
 
-Console.WriteLine("Введите длинну массива ");
+Console.WriteLine("Введите длинну массива и границы рандомных чисел ");
 int arrayLength = Convert.ToInt32(Console.ReadLine());
 int max = Convert.ToInt32(Console.ReadLine());
 int min = Convert.ToInt32(Console.ReadLine());
@@ -23,7 +23,7 @@ int[] userArray = GetRandomArray(arrayLength, min, max);
 
 void PrintArray(int[] arrayToPrint)
 {
-    Console.Write("[ ");
+    Console.Write("[");
     for (int i = 0; i < arrayToPrint.Length; i++)
     {
         Console.Write(arrayToPrint[i]);
