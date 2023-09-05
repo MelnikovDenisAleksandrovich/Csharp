@@ -16,3 +16,4 @@ else
     int number3= number1 % number2;
     Console.WriteLine($"Остаток равен {number3}");
 }
+
