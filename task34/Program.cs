@@ -8,9 +8,9 @@ Console.Clear();
 int[] FillArray()
 {
 Console.Write("Введите трехзначное число ");
-int lenght = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[lenght];
-for(int i = 0; i < lenght; i++)
+int length = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[length];
+for(int i = 0; i < length; i++)
 {
     array[i] = new Random().Next(100, 1000);
 }
