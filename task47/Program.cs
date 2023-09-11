@@ -58,6 +58,5 @@ void Print2DArray(double[,] arrayToPrint)
     }
 }
 
-
 Console.ForegroundColor = ConsoleColor.Blue;
 Print2DArray(Fill2DArray());
