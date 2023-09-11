@@ -18,7 +18,7 @@ int[,] GetRandom2DArray(int rowNumber, int colNumber, int max, int min)
     {
         for (int j = 0; j < colNumber; j++)
         {
-            result[i, j] = new Random().Next(max, min);
+            result[i, j] = new Random().Next (max, min) ;
         }
     }
     return result;
