@@ -4,6 +4,8 @@
 34, 5 -> некратно, остаток 4
 16, 4 -> кратно
 */
+
+
 Console.WriteLine("Ввидите два числа");
 int number1 = Convert.ToInt32(Console.ReadLine());
 int number2 = Convert.ToInt32(Console.ReadLine());
