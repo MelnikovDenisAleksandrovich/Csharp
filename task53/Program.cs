@@ -20,7 +20,7 @@ int[,] GetRandom2DArray(int rowNumber, int colNumber, int max, int min)
     {
         for (int j = 0; j < colNumber; j++)
         {
-            result[i, j] = new Random().Next (max, min) ;
+            result[i, j] = new Random().Next(max, min);
         }
     }
     return result;
@@ -61,10 +61,10 @@ int[,] ResultArray(int[,] array)
     return array;
 }
 
-int[,] arr =GetRandom2DArray(4, 4, 0, 10);
+int[,] arr = GetRandom2DArray(4, 4, 0, 10);
 Print2DArray(arr);
 Console.WriteLine();
-int[,] arr2 =ResultArray(arr);
+int[,] arr2 = ResultArray(arr);
 Print2DArray(arr2);
 
 
