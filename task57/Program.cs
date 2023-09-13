@@ -4,7 +4,6 @@
 */
 /*
 Console.Clear();
-
 int[,] Fill2DArray()
 {
     Console.ForegroundColor = ConsoleColor.Blue;
@@ -34,6 +33,7 @@ int result = new int[cols, rows];
     }
     return result;
 }
+
 
 void Print2DArray(int[,] arrayToPrint)
 
@@ -221,9 +221,11 @@ Console.WriteLine();
 Count(CollectionSort(ExpandMatrix(userArray)));
 */
 
-
+Console.ForegroundColor = ConsoleColor.Blue;
 Console.Write("Введите количество строк в массиве: ");
 int m = Convert.ToInt32(Console.ReadLine());
+
+Console.ForegroundColor = ConsoleColor.DarkGray;
 Console.Write("Введите количество столбцов в массиве: ");
 int n = Convert.ToInt32(Console.ReadLine());
 
