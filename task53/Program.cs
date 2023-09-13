@@ -12,7 +12,6 @@
 
 Console.Clear();
 
-
 int[,] GetRandom2DArray(int rowNumber, int colNumber, int max, int min)
 {
     int[,] result = new int[rowNumber, colNumber];
@@ -68,11 +67,11 @@ int[,] arr2 = ResultArray(arr);
 Print2DArray(arr2);
 
 
-/*
-Разобраться позже что не так !!!
+
+//Разобраться позже что не так !!!
 
 
-int[,] Fill2DArray()
+/*int[,] Fill2DArray()
 {
     Console.ForegroundColor = ConsoleColor.Blue;
     Console.Write("Введите количество строк в двумерном массиве ");
@@ -82,7 +81,7 @@ int[,] Fill2DArray()
     Console.Write("Введите количество столбцов в двумерном массиве ");
     int rows = Convert.ToInt32(Console.ReadLine());
 
-    double[,] array = new double[cols, rows];
+    int[,] array = new int[cols, rows];
 
     Console.ForegroundColor = ConsoleColor.Green;
     Console.Write("Введите максимальное значение ");
@@ -92,15 +91,15 @@ int[,] Fill2DArray()
     Console.Write("Введите минимальное значение ");
     int minValue = Convert.ToInt32(Console.ReadLine());
     
-    double[,] array = new double[cols, rows];
+    int[,] result = new int[cols, rows];
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = new Random().NextDouble() * (maxValue - minValue) + minValue;
+            result[i, j] = new Random().Next() * (maxValue - minValue) + minValue;
         }
     }
-    return array;
+    return result;
 }
 
 void Print2DArray(int[,] arrayToPrint)
@@ -116,12 +115,12 @@ void Print2DArray(int[,] arrayToPrint)
         Console.Write($"[{i}]\t");
         for (int j = 0; j < arrayToPrint.GetLength(1); j++)
         {
-            System.Console.Write(Math.Round(arrayToPrint[i, j], 2) + "\t");
+            System.Console.Write(arrayToPrint[i, j] + "\t");
         }
         System.Console.WriteLine();
     }
 }
-Второй метод : 
+/*
 int[,] SwapFirstWitnLastRowsInArray(int[,] arrayForSwap)
 {
     int[] temp = new int[arrayForSwap.GetLength(1)];
@@ -139,8 +138,9 @@ int[,] SwapFirstWitnLastRowsInArray(int[,] arrayForSwap)
     }
     return arrayForSwap;
 }
-
-/*int[] SwapFirstWitnLastRowsInArrayWithoutTemp(int[,] arrayForSwap)
+*/
+/*Второй метод :
+int[] SwapFirstWitnLastRowsInArrayWithoutTemp(int[,] arrayForSwap)
 
 {
     int row = arrayForSwap.GetLength(0);
@@ -155,11 +155,10 @@ int[,] SwapFirstWitnLastRowsInArray(int[,] arrayForSwap)
     return arrayForSwap;
 }*/
 
-/*
-int[,] userArray = Fill2DArray();
-Print2DArray(userArray);
-Console.WriteLine();
-Print2DArray(SwapFirstWitnLastRowsInArray(userArray));
-Console.WriteLine();
+
+//int[,] userArray = Fill2DArray();
+//Print2DArray(userArray);
+//Console.WriteLine();
+//Print2DArray(SwapFirstWitnLastRowsInArray(userArray));
+//Console.WriteLine();
 //Print2DArray(SwapFirstWitnLastRowsInArrayWithoutTemp(userArray));
-*/
