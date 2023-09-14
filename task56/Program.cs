@@ -43,6 +43,7 @@ int[,] Fill2DArray()
     return array;
 }
 
+
 void Print2DArray(int[,] arrayToPrint)
 {
     System.Console.Write($"[ ]\t");
